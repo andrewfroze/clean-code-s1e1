@@ -17,7 +17,7 @@
 }
 
 .main-page__eisenhower-matrix__more-link {
-  font-family: fantasy, cursive;
+  font-family: "Comic Sans MS", cursive;
 }
 
 @media (max-width:768px) {
@@ -33,10 +33,8 @@
 }
 
 .task-list__add-new-task__text-input,
-.task-list__completed-tasks__task-list-item__label,
-.task-list__completed-tasks__task-list-item__text-input,
-.task-list__incomplete-tasks__task-list-item__label,
-.task-list__incomplete-tasks__task-list-item__text-input {
+.task-list__sub-task-list__task-list-item__label,
+.task-list__sub-task-list__task-list-item__text-input {
   width: 56%;
   display: inline-block;
   flex-grow: 1
@@ -51,8 +49,7 @@
   padding: 0px;
 }
 
-.task-list__completed-tasks__task-list-item,
-.task-list__incomplete-tasks__task-list-item {
+.task-list__sub-task-list__task-list-item {
   list-style: none;
 }
 
@@ -88,8 +85,7 @@ button:hover {
 }
 
 .task-list__add-new-task__text-input,
-.task-list__completed-tasks__task-list-item__text-input,
-.task-list__incomplete-tasks__task-list-item__text-input {
+.task-list__sub-task-list__task-list-item__text-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -103,8 +99,7 @@ button:hover {
 }
 
 .task-list__add-new-task__text-input:focus,
-.task-list__completed-tasks__task-list-item__text-input:focus,
-.task-list__incomplete-tasks__task-list-item__text-input:focus {
+.task-list__sub-task-list__task-list-item__text-input:focus {
   color: #333;
 }
 
@@ -119,8 +114,7 @@ button:hover {
 }
 
 /* Task list */
-.task-list__completed-tasks__task-list-item,
-.task-list__incomplete-tasks__task-list-item {
+.task-list__sub-task-list__task-list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -130,26 +124,22 @@ button:hover {
   align-items: center;
 }
 
-.task-list__completed-tasks__task-list-item > *,
-.task-list__incomplete-tasks__task-list-item > * {
+.task-list__sub-task-list__task-list-item > * {
   vertical-align: middle;
 }
 
-.task-list__completed-tasks__task-list-item__checkbox-input,
-.task-list__incomplete-tasks__task-list-item__checkbox-input {
+.task-list__sub-task-list__task-list-item__checkbox-input {
   margin: 0 10px;
 }
 
-.task-list__completed-tasks__task-list-item__label,
-.task-list__incomplete-tasks__task-list-item__label {
+.task-list__sub-task-list__task-list-item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task-list__completed-tasks__task-list-item__text-input,
-.task-list__incomplete-tasks__task-list-item__text-input {
+.task-list__sub-task-list__task-list-item__text-input {
   width: 226px
 }
 
@@ -164,24 +154,21 @@ button:hover {
 }
 
 /* Completed */
-#task-list__completed-tasks__label {
+#completed-tasks .task-list__sub-task-list__task-list-item__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.task-list__incomplete-tasks__task-list-item__text-input,
-.task-list__completed-tasks__task-list-item__text-input {
+.task-list__sub-task-list__task-list-item__text-input {
   display: none
 }
 
-.task-list__incomplete-tasks__task-list-item.edit-mode .task-list__incomplete-tasks__task-list-item__text-input,
-.task-list__completed-tasks__task-list-item.edit-mode .task-list__completed-tasks__task-list-item__text-input {
+.task-list__sub-task-list__task-list-item.edit-mode .task-list__sub-task-list__task-list-item__text-input {
   display: inline-block;
   width: 224px
 }
 
-.task-list__incomplete-tasks__task-list-item.edit-mode .task-list__incomplete-tasks__task-list-item__label,
-.task-list__completed-tasks__task-list-item.edit-mode .task-list__completed-tasks__task-list-item__label {
+.task-list__sub-task-list__task-list-item.edit-mode .task-list__sub-task-list__task-list-item__label {
   display: none;
 }
