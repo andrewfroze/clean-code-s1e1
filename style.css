@@ -165,7 +165,7 @@ button:hover {
 
 /* Completed */
 #task-list__completed-tasks__label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
