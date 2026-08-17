@@ -8,10 +8,10 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.getElementById("new-task-input");//Add a new task.
-var addButton=document.getElementById("add-button");//first button
-var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var taskInput=document.getElementById("new-task-input");
+var addButton=document.getElementById("add-button");
+var incompleteTaskHolder=document.getElementById("incomplete-tasks");
+var completedTasksHolder=document.getElementById("completed-tasks");
 
 
 //New task list item
@@ -20,17 +20,17 @@ var createNewTaskElement=function(taskString){
     var listItem=document.createElement("li");
 
     //input (checkbox)
-    var checkBox=document.createElement("input");//checkbx
+    var checkBox=document.createElement("input");
     //label
-    var label=document.createElement("label");//label
+    var label=document.createElement("label");
     //input (text)
-    var editInput=document.createElement("input");//text
+    var editInput=document.createElement("input");
     //button.edit
-    var editButton=document.createElement("button");//edit button
+    var editButton=document.createElement("button");
 
     //button.delete
-    var deleteButton=document.createElement("button");//delete button
-    var deleteButtonImg=document.createElement("img");//delete button image
+    var deleteButton=document.createElement("button");
+    var deleteButtonImg=document.createElement("img");
 
     listItem.className="task-list__incomplete-tasks__task-list-item";
 
